@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    
+       <div id="out"><button onclick="dark()" id="darkmode">Dark Mode</button>
+         <h1 style="height: 400px;">Press any key to start...</h1></div>
+        
+    
+    <section class="gameboard" style="height: 800px; backdrop-filter: blur(8px);" id="game">
+       
+        <h1 style="margin-top: -4%;" class="game--title">Tic Tac Toe</h1>
+        <h2 class="result"></h2>
+        <div class="game--container">
+            <div style="border-bottom: 4px solid plum; border-right: 4px solid plum;" class="box" data-box-index="0"></div>
+            <div style="border-bottom: 4px solid plum; border-right: 4px solid plum;" class="box" data-box-index="1"></div>
+            <div style="border-bottom: 4px solid plum;" class="box" data-box-index="2"></div>
+            <div style="border-bottom: 4px solid plum; border-right: 4px solid plum;" class="box" data-box-index="3"></div>
+            <div style="border-bottom: 4px solid plum; border-right: 4px solid plum;" class="box" data-box-index="4"></div>
+            <div style="border-bottom: 4px solid plum; " class="box" data-box-index="5"></div>
+            <div class="box" data-box-index="6"></div>
+            <div style="border-left: 4px solid plum;" class="box" data-box-index="7"></div>
+            <div style="border-left: 4px solid plum;" class="box" data-box-index="8"></div>
+        </div>
+        <h2 class="result"></h2>
+        <button onclick="handleRestartGame()" class="game--restart">Restart Game</button>
+   <p>Tap on a particular box in your turn</p>
+ </section></div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" 
+   crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

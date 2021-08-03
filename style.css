@@ -1,0 +1,83 @@
+  
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(5, 65, 65);
+}
+
+section {
+    text-align: center;
+}
+
+.game--container {
+    display:flex;
+    width: 400px;
+  flex-wrap: wrap;
+    padding-left: 7%;
+    margin: 50px auto;
+}
+h1{
+    margin-top: 10%;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+padding-top: 100px;
+color: aqua;
+text-shadow:3px 3px 2px black;
+font-size: 60px;
+animation-name: example;
+animation-duration: 0.5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-timing-function: ease-out;
+}
+
+@keyframes example {
+from {color: aqua; text-shadow: 3px 3px 3px black;}
+to {color: white; text-shadow: 3px 3px 2px white;}
+}
+
+#darkmode{
+    font-size: 24px;
+    margin-top: -5%;
+    right: 25px;
+    float: right;
+    color:aqua;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+}
+.dark{
+    background-image: url(darkbg.jpg);
+    background-position-y: 30%;
+   color: blanchedalmond;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    font-size: 70px;
+    font-family:cursive;
+    justify-content: center;
+    align-items: center;
+}
+
+.game--restart{
+    width: 130px;
+    color:aqua;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    border-color:2px solid aqua;
+    border: 2px solid ;
+}
+#game{
+    display: none;
+}
